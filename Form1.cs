@@ -170,7 +170,31 @@ namespace EasyWorkApp
         {
             // Placeholder for future functionality
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Logic specific to text changes in textBox1, if any
+        }
+
+        private void copyButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBox1.SelectedText))
+            {
+                Clipboard.SetText(textBox1.SelectedText);
+            }
+        }
+
+        private void pasteButton_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                textBox1.SelectedText = Clipboard.GetText();
+            }
+        }
     }
 }
+
+
+
 
 

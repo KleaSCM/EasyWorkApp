@@ -40,14 +40,14 @@
             MWWAC_DATASETS = new ToolStripMenuItem();
             button_1 = new Button();
             GroupBox_1 = new GroupBox();
-            button_2 = new Button();
-            button_3 = new Button();
-            button_4 = new Button();
             groupBox2 = new GroupBox();
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            button_4 = new Button();
+            button_3 = new Button();
+            button_2 = new Button();
             GroupBox_2 = new GroupBox();
             button_8 = new Button();
             button_7 = new Button();
@@ -63,6 +63,7 @@
             button_11 = new Button();
             button_10 = new Button();
             button_9 = new Button();
+            textBox1 = new TextBox();
             menuStrip1.SuspendLayout();
             GroupBox_1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -77,7 +78,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(7, 2, 0, 2);
-            menuStrip1.Size = new Size(933, 24);
+            menuStrip1.Size = new Size(1711, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -169,36 +170,6 @@
             GroupBox_1.Text = "GroupBox1";
             GroupBox_1.Enter += groupBox1_Enter;
             // 
-            // button_2
-            // 
-            button_2.Location = new Point(226, 28);
-            button_2.Name = "button_2";
-            button_2.Size = new Size(199, 170);
-            button_2.TabIndex = 2;
-            button_2.Text = "button2";
-            button_2.UseVisualStyleBackColor = true;
-            button_2.Click += button_2_Click;
-            // 
-            // button_3
-            // 
-            button_3.Location = new Point(440, 28);
-            button_3.Name = "button_3";
-            button_3.Size = new Size(199, 170);
-            button_3.TabIndex = 3;
-            button_3.Text = "button3";
-            button_3.UseVisualStyleBackColor = true;
-            button_3.Click += button_3_Click;
-            // 
-            // button_4
-            // 
-            button_4.Location = new Point(661, 28);
-            button_4.Name = "button_4";
-            button_4.Size = new Size(199, 170);
-            button_4.TabIndex = 4;
-            button_4.Text = "button4";
-            button_4.UseVisualStyleBackColor = true;
-            button_4.Click += button_4_Click;
-            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(button5);
@@ -247,6 +218,36 @@
             button8.TabIndex = 1;
             button8.Text = "button8";
             button8.UseVisualStyleBackColor = true;
+            // 
+            // button_4
+            // 
+            button_4.Location = new Point(661, 28);
+            button_4.Name = "button_4";
+            button_4.Size = new Size(199, 170);
+            button_4.TabIndex = 4;
+            button_4.Text = "button4";
+            button_4.UseVisualStyleBackColor = true;
+            button_4.Click += button_4_Click;
+            // 
+            // button_3
+            // 
+            button_3.Location = new Point(440, 28);
+            button_3.Name = "button_3";
+            button_3.Size = new Size(199, 170);
+            button_3.TabIndex = 3;
+            button_3.Text = "button3";
+            button_3.UseVisualStyleBackColor = true;
+            button_3.Click += button_3_Click;
+            // 
+            // button_2
+            // 
+            button_2.Location = new Point(226, 28);
+            button_2.Name = "button_2";
+            button_2.Size = new Size(199, 170);
+            button_2.TabIndex = 2;
+            button_2.Text = "button2";
+            button_2.UseVisualStyleBackColor = true;
+            button_2.Click += button_2_Click;
             // 
             // GroupBox_2
             // 
@@ -406,11 +407,21 @@
             button_9.UseVisualStyleBackColor = true;
             button_9.Click += button_9_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(935, 38);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(314, 657);
+            textBox1.TabIndex = 16;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(933, 707);
+            ClientSize = new Size(1711, 707);
+            Controls.Add(textBox1);
             Controls.Add(GroupBox_3);
             Controls.Add(GroupBox_2);
             Controls.Add(GroupBox_1);
@@ -467,6 +478,7 @@
         private Button button_11;
         private Button button_10;
         private Button button_9;
+        private TextBox textBox1;
     }
 }
 
