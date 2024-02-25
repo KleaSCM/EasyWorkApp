@@ -64,6 +64,7 @@
             button_10 = new Button();
             button_9 = new Button();
             textBox1 = new TextBox();
+            folderBrowserDialog1 = new FolderBrowserDialog();
             menuStrip1.SuspendLayout();
             GroupBox_1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -479,6 +480,7 @@
         private Button button_10;
         private Button button_9;
         private TextBox textBox1;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
