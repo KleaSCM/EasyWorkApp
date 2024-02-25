@@ -11,6 +11,7 @@ namespace EasyWorkApp
             InitializeComponent();
         }
 
+        // Handle clicks on menu items to open corresponding websites
         private void eCSNToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenWebsite("https://ecsn.gov.au/ESS/");
@@ -56,6 +57,7 @@ namespace EasyWorkApp
             OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
         }
 
+        // Method to open a website in the default web browser
         private void OpenWebsite(string url)
         {
             try
@@ -72,6 +74,7 @@ namespace EasyWorkApp
             }
         }
 
+        // Handle clicks on application buttons
         private void button_1_Click(object sender, EventArgs e)
         {
             OpenApplication("mspaint");
@@ -81,6 +84,7 @@ namespace EasyWorkApp
         {
             OpenApplication("winword");
         }
+
 
         private void button_3_Click(object sender, EventArgs e)
         {
@@ -127,11 +131,14 @@ namespace EasyWorkApp
             OpenApplication("Code");
         }
 
+
+
         private void button_12_Click(object sender, EventArgs e)
         {
             OpenApplication("powershell.exe");
         }
 
+        // Method to open an application
         private void OpenApplication(string command)
         {
             try
@@ -146,6 +153,22 @@ namespace EasyWorkApp
             {
                 MessageBox.Show("Error opening application: " + ex.Message);
             }
+        }
+
+        // Placeholder event handler methods
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            // Placeholder for future functionality
+        }
+
+        private void GroupBox_2_Enter(object sender, EventArgs e)
+        {
+            // Placeholder for future functionality
+        }
+
+        private void GroupBox_3_Enter(object sender, EventArgs e)
+        {
+            // Placeholder for future functionality
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -168,24 +191,5 @@ namespace EasyWorkApp
                 textBox1.SelectedText = Clipboard.GetText();
             }
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            // Placeholder for future functionality
-        }
-
-        private void GroupBox_2_Enter(object sender, EventArgs e)
-        {
-            // Placeholder for future functionality
-        }
-
-        private void GroupBox_3_Enter(object sender, EventArgs e)
-        {
-            // Placeholder for future functionality
-        }
     }
 }
-
-
-
-
