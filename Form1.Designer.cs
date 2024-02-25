@@ -141,6 +141,7 @@
             // 
             // MWWAC_DATASETS
             // 
+            MWWAC_DATASETS.BackColor = Color.Transparent;
             MWWAC_DATASETS.Name = "MWWAC_DATASETS";
             MWWAC_DATASETS.Size = new Size(123, 20);
             MWWAC_DATASETS.Text = "MWWAC DATASETS";
@@ -148,16 +149,20 @@
             // 
             // button_1
             // 
-            button_1.Location = new Point(6, 28);
+            button_1.BackgroundImage = Properties.Resources.Ahri_76;
+            button_1.BackgroundImageLayout = ImageLayout.Center;
+            button_1.ForeColor = Color.Magenta;
+            button_1.Location = new Point(12, 17);
             button_1.Name = "button_1";
-            button_1.Size = new Size(199, 170);
+            button_1.Size = new Size(199, 175);
             button_1.TabIndex = 1;
-            button_1.Text = "button1";
+            button_1.Text = "Paint";
             button_1.UseVisualStyleBackColor = true;
             button_1.Click += button_1_Click;
             // 
             // GroupBox_1
             // 
+            GroupBox_1.BackColor = Color.Transparent;
             GroupBox_1.Controls.Add(groupBox2);
             GroupBox_1.Controls.Add(button_4);
             GroupBox_1.Controls.Add(button_3);
@@ -168,7 +173,6 @@
             GroupBox_1.Size = new Size(866, 198);
             GroupBox_1.TabIndex = 13;
             GroupBox_1.TabStop = false;
-            GroupBox_1.Text = "GroupBox1";
             GroupBox_1.Enter += groupBox1_Enter;
             // 
             // groupBox2
@@ -222,36 +226,43 @@
             // 
             // button_4
             // 
-            button_4.Location = new Point(661, 28);
+            button_4.BackgroundImage = Properties.Resources.Ahri_76;
+            button_4.ForeColor = Color.Magenta;
+            button_4.Location = new Point(661, 17);
             button_4.Name = "button_4";
-            button_4.Size = new Size(199, 170);
+            button_4.Size = new Size(199, 175);
             button_4.TabIndex = 4;
-            button_4.Text = "button4";
+            button_4.Text = "PowerPoint";
             button_4.UseVisualStyleBackColor = true;
             button_4.Click += button_4_Click;
             // 
             // button_3
             // 
-            button_3.Location = new Point(440, 28);
+            button_3.BackgroundImage = Properties.Resources.Ahri_76;
+            button_3.ForeColor = Color.Magenta;
+            button_3.Location = new Point(440, 17);
             button_3.Name = "button_3";
-            button_3.Size = new Size(199, 170);
+            button_3.Size = new Size(199, 181);
             button_3.TabIndex = 3;
-            button_3.Text = "button3";
+            button_3.Text = "Excel";
             button_3.UseVisualStyleBackColor = true;
             button_3.Click += button_3_Click;
             // 
             // button_2
             // 
-            button_2.Location = new Point(226, 28);
+            button_2.BackgroundImage = Properties.Resources.Ahri_76;
+            button_2.ForeColor = Color.Magenta;
+            button_2.Location = new Point(226, 17);
             button_2.Name = "button_2";
-            button_2.Size = new Size(199, 170);
+            button_2.Size = new Size(199, 181);
             button_2.TabIndex = 2;
-            button_2.Text = "button2";
+            button_2.Text = "Word";
             button_2.UseVisualStyleBackColor = true;
             button_2.Click += button_2_Click;
             // 
             // GroupBox_2
             // 
+            GroupBox_2.BackColor = Color.Transparent;
             GroupBox_2.Controls.Add(button_8);
             GroupBox_2.Controls.Add(button_7);
             GroupBox_2.Controls.Add(button_6);
@@ -261,51 +272,59 @@
             GroupBox_2.Size = new Size(866, 198);
             GroupBox_2.TabIndex = 14;
             GroupBox_2.TabStop = false;
-            GroupBox_2.Text = "GroupBox2";
             GroupBox_2.Enter += GroupBox_2_Enter;
             // 
             // button_8
             // 
-            button_8.Location = new Point(661, 28);
+            button_8.BackgroundImage = Properties.Resources.Ahri_76;
+            button_8.ForeColor = Color.Magenta;
+            button_8.Location = new Point(661, 22);
             button_8.Name = "button_8";
-            button_8.Size = new Size(199, 170);
+            button_8.Size = new Size(199, 176);
             button_8.TabIndex = 4;
-            button_8.Text = "button8";
+            button_8.Text = "PLACEHOLDER";
             button_8.UseVisualStyleBackColor = true;
             button_8.Click += button_8_Click;
             // 
             // button_7
             // 
-            button_7.Location = new Point(440, 28);
+            button_7.BackgroundImage = Properties.Resources.Ahri_76;
+            button_7.ForeColor = Color.Magenta;
+            button_7.Location = new Point(440, 22);
             button_7.Name = "button_7";
-            button_7.Size = new Size(199, 170);
+            button_7.Size = new Size(199, 176);
             button_7.TabIndex = 3;
-            button_7.Text = "button7";
+            button_7.Text = "PLACEHOLDER";
             button_7.UseVisualStyleBackColor = true;
             button_7.Click += button_7_Click;
             // 
             // button_6
             // 
-            button_6.Location = new Point(226, 28);
+            button_6.BackgroundImage = Properties.Resources.Ahri_76;
+            button_6.ForeColor = Color.Magenta;
+            button_6.Location = new Point(226, 22);
             button_6.Name = "button_6";
-            button_6.Size = new Size(199, 170);
+            button_6.Size = new Size(199, 176);
             button_6.TabIndex = 2;
-            button_6.Text = "button6";
+            button_6.Text = "PLACEHOLDER";
             button_6.UseVisualStyleBackColor = true;
             button_6.Click += button_6_Click;
             // 
             // button_5
             // 
-            button_5.Location = new Point(6, 28);
+            button_5.BackgroundImage = Properties.Resources.Ahri_76;
+            button_5.ForeColor = Color.Magenta;
+            button_5.Location = new Point(6, 22);
             button_5.Name = "button_5";
-            button_5.Size = new Size(199, 170);
+            button_5.Size = new Size(199, 176);
             button_5.TabIndex = 1;
-            button_5.Text = "button5";
+            button_5.Text = "Notepad";
             button_5.UseVisualStyleBackColor = true;
             button_5.Click += button_5_Click;
             // 
             // GroupBox_3
             // 
+            GroupBox_3.BackColor = Color.Transparent;
             GroupBox_3.Controls.Add(groupBox5);
             GroupBox_3.Controls.Add(button_12);
             GroupBox_3.Controls.Add(button_11);
@@ -316,7 +335,6 @@
             GroupBox_3.Size = new Size(866, 198);
             GroupBox_3.TabIndex = 15;
             GroupBox_3.TabStop = false;
-            GroupBox_3.Text = "GroupBox3";
             GroupBox_3.Enter += GroupBox_3_Enter;
             // 
             // groupBox5
@@ -370,50 +388,59 @@
             // 
             // button_12
             // 
-            button_12.Location = new Point(661, 28);
+            button_12.BackgroundImage = Properties.Resources.Ahri_76;
+            button_12.ForeColor = Color.Magenta;
+            button_12.Location = new Point(661, 22);
             button_12.Name = "button_12";
             button_12.Size = new Size(199, 170);
             button_12.TabIndex = 4;
-            button_12.Text = "button12";
+            button_12.Text = "Powershell";
             button_12.UseVisualStyleBackColor = true;
             button_12.Click += button_12_Click;
             // 
             // button_11
             // 
-            button_11.Location = new Point(440, 28);
+            button_11.BackgroundImage = Properties.Resources.Ahri_76;
+            button_11.ForeColor = Color.Magenta;
+            button_11.Location = new Point(440, 22);
             button_11.Name = "button_11";
             button_11.Size = new Size(199, 170);
             button_11.TabIndex = 3;
-            button_11.Text = "button11";
+            button_11.Text = "CODE";
             button_11.UseVisualStyleBackColor = true;
             button_11.Click += button_11_Click;
             // 
             // button_10
             // 
-            button_10.Location = new Point(226, 28);
+            button_10.BackgroundImage = Properties.Resources.Ahri_76;
+            button_10.ForeColor = Color.Magenta;
+            button_10.Location = new Point(226, 22);
             button_10.Name = "button_10";
             button_10.Size = new Size(199, 170);
             button_10.TabIndex = 2;
-            button_10.Text = "button10";
+            button_10.Text = "PLACEHOLDER";
             button_10.UseVisualStyleBackColor = true;
             button_10.Click += button_10_Click;
             // 
             // button_9
             // 
-            button_9.Location = new Point(6, 28);
+            button_9.BackgroundImage = Properties.Resources.Ahri_76;
+            button_9.ForeColor = Color.Magenta;
+            button_9.Location = new Point(6, 22);
             button_9.Name = "button_9";
             button_9.Size = new Size(199, 170);
             button_9.TabIndex = 1;
-            button_9.Text = "button9";
+            button_9.Text = "Outlook";
             button_9.UseVisualStyleBackColor = true;
             button_9.Click += button_9_Click;
             // 
             // textBox1
             // 
+            textBox1.BackColor = SystemColors.ScrollBar;
             textBox1.Location = new Point(935, 38);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(314, 657);
+            textBox1.Size = new Size(717, 657);
             textBox1.TabIndex = 16;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -421,6 +448,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImage = Properties.Resources.Ahri;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1711, 707);
             Controls.Add(textBox1);
             Controls.Add(GroupBox_3);
@@ -430,7 +460,7 @@
             MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Form1";
+            Text = "EasyWorkApp";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             GroupBox_1.ResumeLayout(false);

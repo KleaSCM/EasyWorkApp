@@ -85,7 +85,6 @@ namespace EasyWorkApp
             OpenApplication("winword");
         }
 
-
         private void button_3_Click(object sender, EventArgs e)
         {
             OpenApplication("excel");
@@ -130,8 +129,6 @@ namespace EasyWorkApp
         {
             OpenApplication("Code");
         }
-
-
 
         private void button_12_Click(object sender, EventArgs e)
         {
@@ -193,3 +190,4 @@ namespace EasyWorkApp
         }
     }
 }
+
