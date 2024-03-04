@@ -188,6 +188,20 @@ namespace EasyWorkApp
                 textBox1.SelectedText = Clipboard.GetText();
             }
         }
+
+        private async void webView21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                await webView21.EnsureCoreWebView2Async();
+                webView21.CoreWebView2.Navigate("https://open.spotify.com/playlist/53XKEyf0wZ3NDfyz99KYG8");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error navigating to Spotify playlist: " + ex.Message);
+            }
+        }
+
     }
 }
 
