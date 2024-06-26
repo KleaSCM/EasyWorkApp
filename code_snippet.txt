@@ -1,0 +1,87 @@
+using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+
+namespace EasyWorkApp
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        // Method to open a website in the default web browser
+        private void OpenWebsite(string url)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening website: " + ex.Message);
+            }
+        }
+        // Handle clicks on menu items to open corresponding websites
+        private void eCSNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://ecsn.gov.au/ESS/");
+        }
+        private void CV_CHECK_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
+        }
+
+        private void ESS_REPORTING_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://reports.employment.gov.au/PORTAL/Reports");
+        }
+
+        private void QLIK_REPORTING_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://pmc.dynamic.reports.employment.gov.au/bi/hub/my/favorites");
+        }
+
+        private void CM_SHAREPOINT_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://marraworraworra.sharepoint.com/sites/CaseManagement/SitePages/Employee-onboarding-team-home.aspx");
+        }
+        private void MWWAC_DATASETS_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
+        }
+        // Method to open an application
+        private void OpenApplication(string command)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = command,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening application: " + ex.Message);
+            }
+        }
+        // Handle clicks on application buttons
+        private void button_1_Click(object sender, EventArgs e)
+        {
+            OpenApplication("mspaint");
+        }
+        private void button_2_Click(object sender, EventArgs e)
+        {
+            OpenApplication("winword");
+        }
+        private void button_12_Click(object sender, EventArgs e)
+        {
+            OpenApplication("powershell.exe");
+        }
+    }
+}
