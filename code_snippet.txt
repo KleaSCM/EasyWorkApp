@@ -26,6 +26,27 @@ namespace EasyWorkApp
                 MessageBox.Show("Error opening website: " + ex.Message);
             }
         }
+        // Handle clicks on menu items to open corresponding websites
+        private void eCSNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://ecsn.gov.au/ESS/");
+        }
+        private void CV_CHECK_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
+        }
+        private void ESS_REPORTING_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://reports.employment.gov.au/PORTAL/Reports");
+        }
+        private void QLIK_REPORTING_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://pmc.dynamic.reports.employment.gov.au/bi/hub/my/favorites");
+        }
+        private void CM_SHAREPOINT_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://marraworraworra.sharepoint.com/sites/CaseManagement/SitePages/Employee-onboarding-team-home.aspx");
+        }
         // Method to open an application
         private void OpenApplication(string command)
         {
@@ -42,15 +63,19 @@ namespace EasyWorkApp
                 MessageBox.Show("Error opening application: " + ex.Message);
             }
         }
-        // Event handler examples
-        private void eCSNToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OpenWebsite("https://ecsn.gov.au/ESS/");
-        }
-
+        // Handle clicks on application buttons
         private void button_1_Click(object sender, EventArgs e)
         {
             OpenApplication("mspaint");
         }
+        private void button_2_Click(object sender, EventArgs e)
+        {
+            OpenApplication("winword");
+        }
+        private void button_12_Click(object sender, EventArgs e)
+        {
+            OpenApplication("powershell.exe");
+        }
     }
 }
+
