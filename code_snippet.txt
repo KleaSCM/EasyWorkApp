@@ -1,0 +1,56 @@
+using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+
+namespace EasyWorkApp
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        // Method to open a website in the default web browser
+        private void OpenWebsite(string url)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening website: " + ex.Message);
+            }
+        }
+        // Method to open an application
+        private void OpenApplication(string command)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = command,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening application: " + ex.Message);
+            }
+        }
+        // Event handler examples
+        private void eCSNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://ecsn.gov.au/ESS/");
+        }
+
+        private void button_1_Click(object sender, EventArgs e)
+        {
+            OpenApplication("mspaint");
+        }
+    }
+}
