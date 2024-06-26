@@ -33,7 +33,8 @@ namespace EasyWorkApp
         }
         private void CV_CHECK_Click(object sender, EventArgs e)
         {
-            OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
+            OpenWebsite("https://marraworraworra.sharepoint.com/
+    sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
         }
 
         private void ESS_REPORTING_Click(object sender, EventArgs e)
@@ -48,11 +49,13 @@ namespace EasyWorkApp
 
         private void CM_SHAREPOINT_Click(object sender, EventArgs e)
         {
-            OpenWebsite("https://marraworraworra.sharepoint.com/sites/CaseManagement/SitePages/Employee-onboarding-team-home.aspx");
+            OpenWebsite("https://marraworraworra.sharepoint.com/
+    sites/CaseManagement/SitePages/Employee-onboarding-team-home.aspx");
         }
         private void MWWAC_DATASETS_Click(object sender, EventArgs e)
         {
-            OpenWebsite("https://marraworraworra.sharepoint.com/sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
+            OpenWebsite("https://marraworraworra.sharepoint.com/
+    sites/MWWACCDP/SitePages/LearningTeamHome.aspx");
         }
         // Method to open an application
         private void OpenApplication(string command)
